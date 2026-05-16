@@ -1,71 +1,69 @@
-# Image Capture and Video Processing Using OpenCV
+# 📸 Image Capture and Video Processing Using OpenCV
+
+## 🎯 Aim
+
+To develop a Python program using OpenCV to capture images from a webcam and perform real-time video processing operations such as displaying, resizing, and rotating frames.
 
 ---
 
-## Aim
+## 🛠️ Technologies Used
 
-To write a Python program using OpenCV to capture an image from the webcam and perform the following operations:
-
-1. Write the frame as a JPG file  
-2. Display the video  
-3. Display the video by resizing the window  
-4. Rotate and display the video  
+* Python 3.x
+* OpenCV (`cv2`)
+* Matplotlib
+* Jupyter Notebook / VS Code
 
 ---
 
-## 🛠️ Software Used
+## 📌 Features
 
-- Anaconda – Python 3.7  
-- Jupyter Notebook / VS Code  
-- OpenCV (`cv2`)  
-
----
-
-## ⚙️ Algorithm
-
-### Step 1:
-Import the required libraries and initialize the webcam using `cv2.VideoCapture()`.
-
-### Step 2:
-Capture frames continuously from the webcam.
-
-### Step 3:
-Save a frame as a JPG image using `cv2.imwrite()`.
-
-### Step 4:
-Display the live video stream using `cv2.imshow()`.
-
-### Step 5:
-Resize the frame and rotate it using OpenCV functions, then display the processed frames.
+* Capture image from webcam
+* Save captured frame as JPG file
+* Display live video stream
+* Resize video frames (640 × 480)
+* Rotate video frames (90° clockwise)
 
 ---
 
-## 💻 Program
+## ⚙️ Installation
 
-### Developed By:
-**Name:** ____________________________  
-
-### Register No:
-____________________________  
+```bash
+pip install opencv-python matplotlib
+```
 
 ---
 
-## Output
+## 🚀 How to Run
 
-### i) Write the frame as JPG image
-Captured image is saved as `captured_image.jpg`
+1. Open Jupyter Notebook
+2. Run cells step-by-step
+3. Allow camera access
+4. Execute each section:
 
-### ii) Display the video
-Live webcam video is displayed
-
-### iii) Display the video by resizing the window
-Video is shown in resized resolution (640 × 480)
-
-### iv) Rotate and display the video
-Video is displayed after rotation (90° clockwise)
+   * Capture image
+   * Display video
+   * Resize video
+   * Rotate video
 
 ---
 
-## Result
+## 🧠 Algorithm
 
-Thus, the image is successfully captured from the webcam and various video processing operations such as saving, displaying, resizing, and rotating are performed using OpenCV.
+1. Import required libraries
+2. Initialize webcam using `cv2.VideoCapture(0)`
+3. Capture frame using `cap.read()`
+4. Save frame using `cv2.imwrite()`
+5. Convert BGR → RGB for display
+6. Display using Matplotlib
+7. Resize frame using `cv2.resize()`
+8. Rotate frame using `cv2.rotate()`
+9. Release camera using `cap.release()`
+
+---
+
+
+---
+
+## 📊 Result
+
+The program successfully captures images from the webcam and performs real-time video processing operations including display, resizing, and rotation using OpenCV.
